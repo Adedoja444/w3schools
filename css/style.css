@@ -135,19 +135,17 @@ header nav .logo-container {
 .theheading {
     font-size: 36px;
     color: #ffffff;
-    margin: 0px 0px 8px;
-    padding: 52px 0px 80px;
+    margin: 0px 0px 20px;
+    padding: 35px 0px 20px;
     text-align: center;
 }
 
 .how-it-works {
     background-color: #282A35;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 50vh;
 }
 
 h4 {
@@ -163,77 +161,56 @@ h4 {
 }
 
 .textss {
-    /* display: flex; */
+    display: flex;
     color: rgb(255, 255, 255);
     font-weight: 550;
-    /* text-align: center; */
-    /* font-style: normal;
-    justify-content: center; */
-    /* padding: 15px 32px 67px; */
-    font-size: 17px;
-
+    text-align: center; 
+    font-style: normal;
+    justify-content: space-between;
+    
 }
 
-.w3schools {
-    margin-right: 90px;
-    padding-top: 45px;
-    margin-left: 0px;
-}
+
 
 .templates {
-    padding-top: 45px;
-    margin-left: 5px;
-    margin-right: 50px;
+    padding: 10px 30px 10px 30px;
+    width: 23%;
+    /* margin-left: 5px;
+    margin-right: 50px; */
+    text-align: center;
+    
 }
 
-.edit {
-    margin-left: 24px;
-    padding-top: 45px; 
-    margin-right: 25px;
-}
-
-.share {
-    margin-left: 24px;
-    padding-top: 45px;
-    margin-right: 0px;
+.frames {
+    padding: 10px 30px 10px 30px;
+    width: 23%;
 }
 
 .images {
     width: 100%;
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.frame-1 {
-    margin: 30px 20px 0px 0px;
+.edit {
+    color: #fff;
+    font-weight: 600;
+    text-align: start;
 }
 
-.line1 {
-    margin: 64px 0px 0px;
-}
-
-.frame-2 {
-    margin: 30px 22px 0px 38px;
-}
-
-.frame-3 {
-    margin: 30px 30px 0px 26px;
-}
-
-.line3 {
-    margin: 50px 0px 0px;
-}
-
-.frame-4 {
-    margin: 30px 0px 0px 32px;
+.framesvg {
+    padding-left: 40px;
 }
 
 .plans {
     justify-content: center;
     text-align: center;
     background: #D9EEE14D;
+}
+
+.how-it-should-work {
+    display: none;
 }
  
 .paymentscontainer {
@@ -304,6 +281,7 @@ h4 {
     position: absolute;
     top: -100px;
     margin-left: 55px;
+    box-shadow: 0 15px 34px rgb(40 42 53 / 29%);
 }
 
 h6{
@@ -386,7 +364,13 @@ h6 {
 .Pro {
     margin-left: 10px;
     padding: 20px 10px 10px 20px;
-    width: 30%;
+    width: 80%;
+}
+
+.Premium {
+    margin-left: 10px;
+    padding: 20px 10px 10px 20px;
+    width: 83%;
 }
 
 .dark {
@@ -462,28 +446,160 @@ h6 {
 
 /* tablet view */
 @media (max-width:768px ) {
+    .paymentscontainer {
+        flex-direction: column;
+        background: none;
+        margin: 0px auto;
+        padding-top: 30px;
+        align-items: center;
+    }
+
+    .payments {
+        position: relative;
+        margin-top: 0px;
+        top: 0px;
+    }
+     
+    .dark {
+        width: 65%;
+    }
+
+    .Pro {
+        background-color: #fff;
+        padding: 25px 15px 5px 15px;
+        width: 80%;
+        margin-top: 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 55px;
+    }
+
+    .Premium {
+        background-color: #fff;
+        padding: 25px 15px 5px 15px;
+        width: 80%;
+        margin-top: 8px;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 55px;
+    }
+
+    .two-money {
+        width: 65%;
+    }
+
     .how-it-works {
+        flex-direction: column;
+        height: 270vh;
+    }
+
+    .images {
         flex-direction: column;
     }
 
-    /* .line1 {
+    .how-it-actually-works {
+        display: none;
+    }
+
+    .how-it-should-work {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .framesvg {
+        padding-left: 0px;
+    }
+
+    .edit {
+        text-align: center;
+    }
+}
+
+
+/* mobile view */
+@media (max-width:425px ) {
+    .main-box {
+        flex-direction: column;
+    }
+
+    .division {
+        width: 100%;
+    }
+
+    .dark {
+        width: 100%;
+    }
+
+    .payments {
+        margin-left: 33px;
+    }
+
+    .Pro {
+        margin-left: 33px;
+    }
+
+    .Premium {
+        margin-left: 33px;
+    }
+
+    .two-money {
+        width: 100%;
+    }
+
+   .how-it-works {
+        height: 270vh;
+    } 
+
+    .how-it-actually-works {
+        display: none;
+    }
+
+    .how-it-should-work {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .images {
+        height: 0px;
+        align-items: start;
+    }
+
+    .w3schools {
+        padding-top: 0px;
+    }
+
+    .edit {
+        padding-top: 0px;
+    }
+
+    .templates {
+        padding-top: 0px;
+    }
+
+    .share {
+        padding-top: 0px;
+    }
+
+    .line1 {
         display: none;
     }
 
     .line2 {
         display: none;
-    } 
-    
-    .line3 {
-        display: none;
-    } */
-
-    /* .images {
-        flex-direction: column;
     }
 
-    .textss {
-        flex-direction: column;
-    } */
+    .line3 {
+        display: none;
+    }
+
+    .frame-1 {
+        align-self: center;
+    }
+
+
 }
 
